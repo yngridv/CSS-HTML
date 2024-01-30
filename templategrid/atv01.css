@@ -1,0 +1,107 @@
+.box{
+    height: 550px;
+    border: 3px solid rgb(72, 72, 228);
+    display: grid;
+    grid-template-areas: "esquerda topo direita"
+                         "esquerda meio direita"
+                         "esquerda rodape direita";
+    grid-template-rows: 100px 1fr 150px;
+    grid-template-columns: 200px 1fr 200px;    
+    background-color: white;
+    padding: 10px;
+}
+
+.topo{
+    background-color: palegreen;
+    grid-area: topo;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.esquerda{
+    background-color: peachpuff;
+    grid-area: esquerda;
+    display: grid;
+    grid-template-areas: "c1"
+                         "c2"
+                         "c3";
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 150px; 
+                      
+}
+
+.esquerda .c1{
+    background-color: plum;
+    grid-area: c1;
+}
+
+.c1 img {
+    height: 150px;
+    width: 150px;
+}
+
+.esquerda .c2{
+    background-color: rgb(211, 209, 106);
+    grid-area: c2;
+    text-align: center;
+    padding-top: 1px;
+}
+
+.esquerda .c3{
+    background-color: palevioletred;
+    grid-area: c3;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.meio{ 
+    background-color: rgb(207, 42, 207);
+    grid-area: meio;
+    display: grid;
+    grid-template-areas: "caixa1 caixa2 caixa3";
+    grid-template-rows: 300px;
+    grid-template-columns: 300px 350px 300px; 
+
+}
+.meio .caixa1{
+    background-color: beige;
+ 
+}
+
+.meio .caixa2{
+    background-color: rgb(207, 207, 113);
+}
+
+.meio .caixa3{
+    background-color: rgb(66, 66, 13);
+}
+
+.rodape{
+    background-color: powderblue;
+    grid-area: rodape; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.direita{
+    background-color: rgb(229, 198, 147);
+    grid-area: direita;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.direita .d1 {
+    background-color: rgb(197, 153, 238);
+    height: 180px;
+}
+.direita .d2 {
+    background-color: rgb(122, 33, 206);
+    height: 180px;
+}
+.direita .d3 {
+    background-color: rgb(134, 95, 172);
+    height: 180px;
+}
